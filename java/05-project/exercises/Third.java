@@ -1,3 +1,5 @@
+package exercises;
+
 // Get bigger than three nums
 import java.util.Scanner;
 
@@ -10,9 +12,13 @@ public class Third {
   public static void main(String args[]) {
     Third biggerNum = new Third();
 
-    biggerNum.input();
-    biggerNum.getBigger();
-    biggerNum.output();
+    biggerNum.execute();
+  }
+
+  public void execute() {
+    this.input();
+    this.compute();
+    this.output();
   }
 
   private void input() {
@@ -27,7 +33,11 @@ public class Third {
     System.out.println("Digite mais um número:");
     thirdNum = input.nextDouble();
 
-    input.close();
+    // input.close();
+  }
+
+  private void compute() {
+    getBigger();
   }
 
   private void getBigger() {

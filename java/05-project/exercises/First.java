@@ -1,3 +1,4 @@
+package exercises;
 // Multiply Table
 
 import java.util.Scanner;
@@ -10,8 +11,12 @@ public class First {
   public static void main(String args[]) {
     First table = new First();
 
-    table.input();
-    table.output();
+    table.execute();
+  }
+
+  public void execute() {
+    this.input();
+    this.output();
   }
 
   private void input() {
@@ -23,12 +28,12 @@ public class First {
     System.out.println("Digite a quantidade máxima da tabuada: ");
     maxFactor = input.nextInt();
 
-    input.close();
+    // input.close();
   }
 
   private void output() {
     for (int i = minFactor; i <= maxFactor; i++) {
-        int result = multiplier * i;
+      int result = multiplier * i;
 
       System.out.printf(multiplier + " x " + i + " = " + result + "\n");
     }

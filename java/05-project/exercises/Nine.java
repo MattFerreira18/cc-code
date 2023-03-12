@@ -1,3 +1,5 @@
+package exercises;
+
 // Product price with discount
 import java.util.Scanner;
 
